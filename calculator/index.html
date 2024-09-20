@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+        <script src="script.js" defer></script>
+    <title>Calculator</title>
+</head>
+<body>
+   <div class="h-screen w-screen bg-zinc-300 flex justify-center items-center">
+
+    <div class="rounded-lg border-4 bg-stone-700 border-stone-700 p-12 max-w-xs mx-auto" id="calculator">
+        <div>
+            <h1 class="text-transparent bg-clip-text bg-gradient-to-r from-pink-300 via-purple-300 to-indigo-400 text-xl">Calculator</h1>
+          <input id="result_area" type="text" readonly class="w-full text-right text-2xl p-4 bg-stone-800 text-white rounded mb-4">
+      
+          <div  class="grid grid-cols-4 gap-4">
+            <div  id="allClear"   class="flex justify-center items-center bg-stone-600 text-white p-4 rounded cursor-pointer">AC</div>
+            <div id="del"   class="  flex justify-center items-center bg-stone-600 text-white p-4 rounded cursor-pointer">DEL</div>
+            <div class="first_row flex justify-center items-center bg-stone-600 text-white p-4 rounded cursor-pointer">%</div>
+            <div class="first_row flex justify-center items-center bg-stone-600 text-white p-4 rounded cursor-pointer">/</div>
+          </div>
+          <div class="grid grid-cols-4 gap-4 mt-4">
+            <div class="first_row flex justify-center items-center bg-stone-600 text-white p-4 rounded cursor-pointer">7</div>
+            <div class="first_row flex justify-center items-center bg-stone-600 text-white p-4 rounded cursor-pointer">8</div>
+            <div class="first_row flex justify-center items-center bg-stone-600 text-white p-4 rounded cursor-pointer">9</div>
+            <div class="first_row flex justify-center items-center bg-stone-600 text-white p-4 rounded cursor-pointer">*</div>
+          </div>
+          <div class="grid grid-cols-4 gap-4 mt-4">
+            <div class="first_row flex justify-center items-center bg-stone-600 text-white p-4 rounded cursor-pointer">4</div>
+            <div class="first_row  flex justify-center items-center bg-stone-600 text-white p-4 rounded cursor-pointer">5</div>
+            <div class="first_row flex justify-center items-center bg-stone-600 text-white p-4 rounded cursor-pointer">6</div>
+            <div class="first_row flex justify-center items-center bg-stone-600 text-white p-4 rounded cursor-pointer">-</div>
+          </div>
+          <div class="grid grid-cols-4 gap-4 mt-4">
+            <div class="first_row flex justify-center items-center bg-stone-600 text-white p-4 rounded cursor-pointer">1</div>
+            <div class="first_row flex justify-center items-center bg-stone-600 text-white p-4 rounded cursor-pointer">2</div>
+            <div class="first_row flex justify-center items-center bg-stone-600 text-white p-4 rounded cursor-pointer">3</div>
+            <div class="first_row flex justify-center items-center bg-stone-600 text-white p-4 rounded cursor-pointer">+</div>
+          </div>
+          <div class="grid grid-cols-4 gap-4 mt-4">
+            <div id="zeros"  class=" flex justify-center items-center bg-stone-600 text-white p-4 rounded cursor-pointer">00</div>
+            <div class="first_row flex justify-center items-center bg-stone-600 text-white p-4 rounded cursor-pointer">0</div>
+            <div class="first_row flex justify-center items-center bg-stone-600 text-white p-4 rounded cursor-pointer">.</div>
+            <div id="answer" class=" flex justify-center items-center bg-stone-600 text-white p-4 rounded cursor-pointer">=</div>
+          </div>
+        </div>
+      </div>
+      
+
+
+   </div>
+</body>
+</html>

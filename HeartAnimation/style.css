@@ -1,0 +1,31 @@
+body{
+    background-color: black;
+    height: 100vh;
+   overflow: hidden;
+ 
+}
+span {
+    background-image: url('https://cdn-icons-png.flaticon.com/128/8236/8236748.png');
+    background-size: cover; 
+    position: absolute;
+    pointer-events: none;
+    width: 100px;
+    height: 100px; 
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    animation: animate 6s linear;
+}
+@keyframes animate{
+    0%{
+        transform: translate(-50%, -50%);
+        opacity:1;
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        transform: translate(-50%, -4000%);
+        opacity:0;
+        filter: hue-rotate(800deg);
+    }
+}
+  
